@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { E404Component } from './pages/e404/e404.component';
 
 const routes: Routes = [
+  // Rota padrão → Página inicial → 'home'.
   // Rota para a página inicial caso não especificada.
   // Deve ser SEMPRE a primeira rota!
   {
@@ -38,7 +39,6 @@ const routes: Routes = [
     title: 'Erro 404',
     component: E404Component
   },
-
   // Rota para 'profile'.
   {
     path: 'profile',
@@ -53,7 +53,6 @@ const routes: Routes = [
     redirectTo: 'e404',
     pathMatch: 'full'
   }
-
 ];
 
 @NgModule({
