@@ -1,4 +1,7 @@
+import { environment } from './../../environments/environment';
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-theme',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./theme.component.css']
 })
 export class ThemeComponent {
+
+  public env = environment;
 
 }

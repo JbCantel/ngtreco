@@ -1,12 +1,29 @@
-<div *ngIf="articles">
+<main>
+
+<article *ngIf="articles">
 
   <ul>
 
     <li *ngFor="let article of articles">
       <a routerLink="/view/{{article.id}}">
         {{article.name}}
-      </a></li>
+      </a>
+    </li>
 
   </ul>
 
-</div>
+</article>
+
+<aside>
+  <div *ngIf="mostVisited">
+    <h3>+ Visitados</h3>
+    <ul>
+      <li *ngFor="let visited of mostVisited">
+        <a routerLink="/view/{{visited.id}}">{{visited.name}}</a>
+
+      </li>
+    </ul>
+  </div>
+</aside>
+
+ <main>

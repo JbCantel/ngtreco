@@ -21,3 +21,34 @@ body {
 body {
   background-color: rgba(32, 170, 136, 0.808);
 }
+
+a {
+  text-decoration: none;
+  color: rgba(39, 157, 180, 0.932);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+aside {
+  border-top: 1px dotted grey;
+  background-color: #eee;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    flex-direction: row;
+  }
+
+  aside {
+    min-width: 250px;
+    max-width: 250px;
+    border: none;
+    border-left: 1px dotted gray;
+    position: relative;
+
+  }
+}
+
